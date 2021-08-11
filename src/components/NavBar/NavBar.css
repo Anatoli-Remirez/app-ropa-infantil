@@ -1,0 +1,24 @@
+.nav {
+    background-color:aquamarine;
+}
+
+.logo {
+
+    color:brown;
+}
+
+.container ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-decoration: none;
+}
+
+.container ul li {
+    list-style: none;
+    font-size: large;
+    font-weight: 500;
+}
+
+
+
