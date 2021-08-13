@@ -1,0 +1,15 @@
+.saludo {
+
+    font-size: 30px;
+    padding-top: 50px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight:normal;
+    color: blanchedalmond;
+}
+
+.container-items {
+
+    height: 500px;
+    background-color: violet;
+}
+

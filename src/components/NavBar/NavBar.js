@@ -1,25 +1,41 @@
-import React from 'react';
+import React, { Component } from 'react'
+import { Menu } from 'semantic-ui-react'
+import { Icon } from 'semantic-ui-react'
+import "./NavBar.css"
+
 import './NavBar.css';
 
-const NavBar = () => {
-    return (
-        <div className = "nav">
-            <div className = "container">
-                <div className = "logo">
-                    <h3>Tienda ropa infantil</h3>
-                </div>
-                <div className = "menu">
-                    <ul>
-                        <li>Ropa</li>
-                        <li>Gorras</li>
-                        <li>Camisetas</li>   
-                    </ul>
-                </div>
-            </div>
-        </div>
-            
-        
-    );
-};
+export default class MenuExampleHeader extends Component {
+  state = {}
 
-export default NavBar;
+  handleItemClick = (e, { name }) => this.setState({ activeItem: name })
+
+  render() {
+    const { activeItem } = this.state
+
+    return (
+      <div className="navBar">
+      <Menu id="menu">
+        <Menu.Item header id="titulo">Tienda de ropa infantil</Menu.Item>
+        <Menu.Item id="ropa"
+          name='Ropa'
+          active={activeItem === 'ropa'}
+          onClick={this.handleItemClick}
+        />
+        <Menu.Item id="personalizacion"
+          name='Personalización'
+          active={activeItem === 'personalización'}
+          onClick={this.handleItemClick}
+        />
+        <Menu.Item id="contacto"
+          name='Contacto'
+          active={activeItem === 'contacto'}
+          onClick={this.handleItemClick}
+          
+        />
+      </Menu>
+      </div>
+      
+    )
+  }
+}

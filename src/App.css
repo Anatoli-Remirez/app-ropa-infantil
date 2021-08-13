@@ -1,0 +1,12 @@
+.container-items {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+   
+}
+
+#imagen {
+    width:200px;
+    margin-left: 100px;
+}

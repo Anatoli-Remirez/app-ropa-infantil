@@ -1,24 +1,35 @@
-.nav {
-    background-color:aquamarine;
-}
+.navBar {
 
-.logo {
-
-    color:brown;
-}
-
-.container ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    text-decoration: none;
 }
 
-.container ul li {
-    list-style: none;
-    font-size: large;
-    font-weight: 500;
+#titulo {
+
+    color:red;
+    margin-right: 100px;
+    margin-left: 100px;
+    background-color: aqua;
+    
 }
 
+#menu {
+    width: 1000px;
+    height: 50px;
+    background-color: rgb(207, 199, 199)
+}
 
+#ropa {
+    background-color: aqua;
+    margin-right: 100px;
+}
 
+#personalizacion {
+    background-color: aqua;
+    margin-right: 100px;
+}
+
+#contacto {
+    background-color: aqua;
+    margin-right: 100px;
+}
