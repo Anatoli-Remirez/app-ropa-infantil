@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Menu } from 'semantic-ui-react'
-import { Icon } from 'semantic-ui-react'
+import  CartWidget  from "../CartWidget/CartWidget"
 import "./NavBar.css"
 
 import './NavBar.css';
@@ -34,6 +34,7 @@ export default class MenuExampleHeader extends Component {
           
         />
       </Menu>
+      <CartWidget />
       </div>
       
     )
