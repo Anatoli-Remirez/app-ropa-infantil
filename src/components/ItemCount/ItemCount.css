@@ -1,0 +1,57 @@
+.botonPlus {
+
+    background-color: aqua;
+    border-radius: 5px;
+    border: solid;
+    border-color: white;
+    height: 28px;
+    width: 28px;
+    font-weight: bold;
+}
+
+.botonRest {
+
+    background-color: aqua;
+    border-radius: 5px;
+    border: solid;
+    border-color: white;
+    height: 28px;
+    width: 28px;
+    font-weight: bold;
+}
+
+.botonAgregar2 {
+
+    background-color: aqua;
+    border-radius: 5px;
+    border: solid;
+    border-color: white;
+    height: 40px;
+    width: 100px;
+    font-weight: bold;
+}
+
+
+.contador {
+
+    width: 50px;
+    height: 30px;
+    background-color:burlywood;
+    margin-left: 445px;
+    padding:3px;
+    font-weight: bold;
+    
+}
+
+.stockDisponible {
+
+    font-size:10px;
+    text-align: center;
+}
+
+.unidades-sobrantes {
+
+    font-size: 9px;
+    color:red;
+    font-weight: bold;
+}
