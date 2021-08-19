@@ -8,10 +8,10 @@
     margin-top: 100px;
 }
 
-.container-items {
+.ItemListContainer {
 
-    height: 500px;
-    background-color: violet;
+    
     margin-top: 10px;
+    text-align: left;
 }
 
