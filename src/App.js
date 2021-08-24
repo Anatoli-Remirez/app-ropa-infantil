@@ -14,9 +14,6 @@ function App() {
     <div className="App">
         
         <NavBar title = "Tienda de ropa infantil" subtitle="La mejor" />
-        <div className="botonAgregar">
-        <ItemCount stock="5" initial="1" />
-        </div>
         <div className="container">
         <ItemListContainer saludo="Hola bienvenido a tu tienda de ropa infantil "/> 
         </div>

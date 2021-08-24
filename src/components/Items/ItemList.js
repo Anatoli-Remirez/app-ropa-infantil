@@ -1,33 +1,32 @@
-// import React, { useEffect, useState } from 'react'
+import React, {useState, useEffect} from 'react'
+import ItemDetails from '../ItemDetailContainer/ItemDetails';
+import Items from '../Items/Items'
+import '../Items/ItemList.css'
 
-// const ItemList = () => {
+export const ItemList = () => {
 
-//     const [users, setUsers] = useState([]);
-
-//     useEffect(() => {
-
-//         fetch('https://fakestoreapi.com/products?limit=5')
-//             .then(res=>res.json())
-//             .then(json=>setUsers(json)) 
-
-//     }, []);
-    
-//     return (
-//         <div className="ItemList">
-//             <h1>Items</h1>
+    const [items, setItems] = useState([]);
+  
+    useEffect(() => {
+  
+      fetch('productos.json')
+              .then(res=>res.json())
+              .then(json=>setItems(json))
+             
+    }, [])
+  
+  
+    return (
+      <div className="item-list">
         
-//         {users.map ((e) => {
-
-//            return (
-
-//             <div key = {e.id}>
-//                 <p>{e.category}-{e.description}-{e.id}-{e.image}-{e.category}</p>
-//             </div>
-//            )     
-//            })}
-    
-//         </div>
-// );
-// };
-
-// export default ItemList
+        {items.map((e) => {
+         
+         return <div className="items-and-itemDetails"><Items key={items.nombre} data={e}/>
+                <ItemDetails key={items.precio} data={e}/> </div>
+  
+        })}
+      </div>
+    )
+  }
+  
+  export default ItemList
