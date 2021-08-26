@@ -22,6 +22,7 @@
 #ropa {
     background-color: aqua;
     margin-right: 100px;
+    
 }
 
 #personalizacion {
@@ -32,4 +33,19 @@
 #contacto {
     background-color: aqua;
     margin-right: 100px;
+}
+
+.Link {
+
+    color: black;
+    text-decoration: none;
+    list-style-type: none;
+    
+    
+}
+
+.active{
+
+    background-color: tomato;
+   
 }

@@ -2,22 +2,33 @@ import React from 'react';
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import NavBar from './components/NavBar/NavBar';
+import { BrowserRouter as Router, Switch, Route, Link } from  'react-router-dom'
+// import Home from './views/Home'
+// import About from './views/About'
+import ItemDetailContainer from '../src/components/ItemDetailContainer/ItemDetailContainer'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
-import ItemCount from './components/ItemCount/ItemCount';
-
 
 
 
 function App() {
   return (
-   
+   <Router>
     <div className="App">
-        
-        <NavBar title = "Tienda de ropa infantil" subtitle="La mejor" />
-        <div className="container">
-        <ItemListContainer saludo="Hola bienvenido a tu tienda de ropa infantil "/> 
-        </div>
+      <NavBar />
+      <Switch>
+        <Route exact path="/">
+          <ItemListContainer />
+        </Route>
+        <Route path="/category/:categoryId">
+          <ItemListContainer />
+        </Route>
+        <Route path="/item/:id">
+          <ItemDetailContainer />
+        </Route>
+      </Switch>
+      
     </div>
+    </Router>
     
   );
 }

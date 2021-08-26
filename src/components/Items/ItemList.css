@@ -1,4 +1,7 @@
-.items-and-itemDetails {
+.items-container {
 
     display:flex;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-evenly;
 }
