@@ -1,1 +1,8 @@
-[{"id":"Skate","category":"camisetas_osos","color":"Blanco","precio":12,"imagen":"3copia.jpg"},{"id":"Juegos","category":"camisetas_osos","color":"Blanco","precio":15,"imagen":"4copia.jpg"},{"id":"Oso","category":"camisetas_skate","color":"Blanco","precio":18,"imagen":"9copia.jpg"},{"id":"Rueda","category":"camisetas_skate","color":"Blanco","precio":10,"imagen":"11copia.jpg"},{"id":"Labios","category":"camisetas_juegos","color":"Blanco","precio":11,"imagen":"10copia.jpg"},{"id":"Cocodrilo","category":"camisetas_juegos","color":"Blanco","precio":12,"imagen":"8copia.jpg"}]
+[
+    {"id":1,"category":"categoria1","color":"Blanco","precio":12,"imagen":"3copia.jpg"},
+    {"id":2,"category":"categoria2","color":"Blanco","precio":15,"imagen":"4copia.jpg"},
+    {"id":3,"category":"categoria3","color":"Blanco","precio":18,"imagen":"9copia.jpg"},
+    {"id":4,"category":"categoria1","color":"Blanco","precio":10,"imagen":"11copia.jpg"},
+    {"id":5,"category":"categoria2","color":"Blanco","precio":11,"imagen":"10copia.jpg"},
+    {"id":6,"category":"categoria3","color":"Blanco","precio":12,"imagen":"8copia.jpg"}
+]

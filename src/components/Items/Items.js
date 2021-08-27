@@ -16,7 +16,7 @@ const Items = ({data}) => (
           <span className='price'>{data.precio} €</span>
           <span className='stay'>{data.color}</span>
         </Item.Meta>
-        <Item.Description></Item.Description>
+        <Item.Description>{data.category}</Item.Description>
       </Item.Content>
        
     </Item></Link>
