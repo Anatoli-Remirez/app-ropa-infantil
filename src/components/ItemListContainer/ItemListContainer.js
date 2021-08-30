@@ -10,20 +10,20 @@ export const ItemListContainer = () => {
   
   const [items, setItems] = useState([]);
   const {categoryId}=useParams();
-  console.log(categoryId)
+ 
   useEffect(() => {
 
-    fetch('productos.json')
+    fetch('https://fakestoreapi.com/products?limit=5')
   .then(response => response.json())
   .then(json => {
     categoryId ?
     setItems(json.filter((e)=>e.category === categoryId)):
     setItems(json);
-    console.log(json);
+   
     
   })}, [categoryId]);
   
- console.log(items)
+ 
   return(
     <div>
     <div><h1>{categoryId}</h1></div>

@@ -4,13 +4,13 @@ import { Icon, Item } from 'semantic-ui-react'
 
 
 
-const ItemDetails = ({items}) => (
+const ItemDetails = ({data}) => (
   <Item.Group>
     <Item>
-      <Item.Image size='small' src={items.imagen} />
+      <Item.Image size='small' src={data.image} />
 
       <Item.Content>
-        <Item.Header as='a'>{items.id}</Item.Header>
+        <Item.Header as='a'>{data.title}</Item.Header>
         <Item.Description>Aquí hay que crear una descripcion de cada producto</Item.Description>
         <Item.Extra>
           <Icon color='green' name='check' /> 121 Votes

@@ -15,9 +15,9 @@ export default class MenuExampleHeader extends Component {
       <div className="navBar">
       <Menu id="menu">
         <Menu.Item header id="titulo"><Link to="/">Tienda de ropa infantil</Link></Menu.Item>
-        <Menu.Item id="categoria1"><Link to="/category/categoria1">Categoria 1</Link></Menu.Item>
-        <Menu.Item id="categoria2"><Link to="/category/categoria2">Categoria 2</Link></Menu.Item>
-        <Menu.Item id="categoria3"><Link to="/category/categoria3">Categoria 3</Link></Menu.Item>
+        <Menu.Item id="categoria1"><Link to="/category/men's clothing">Men's clothing</Link></Menu.Item>
+        <Menu.Item id="categoria2"><Link to="/category/jewelery">Jewelery</Link></Menu.Item>
+       
         
       </Menu>
       <CartWidget />

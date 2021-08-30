@@ -1,8 +1,8 @@
 [
-    {"id":1,"category":"categoria1","color":"Blanco","precio":12,"imagen":"3copia.jpg"},
-    {"id":2,"category":"categoria2","color":"Blanco","precio":15,"imagen":"4copia.jpg"},
-    {"id":3,"category":"categoria3","color":"Blanco","precio":18,"imagen":"9copia.jpg"},
-    {"id":4,"category":"categoria1","color":"Blanco","precio":10,"imagen":"11copia.jpg"},
-    {"id":5,"category":"categoria2","color":"Blanco","precio":11,"imagen":"10copia.jpg"},
-    {"id":6,"category":"categoria3","color":"Blanco","precio":12,"imagen":"8copia.jpg"}
+    {"id":1,"category":"Categoria1","color":"Blanco","precio":12,"imagen":"3copia.jpg"},
+    {"id":2,"category":"Categoria2","color":"Blanco","precio":15,"imagen":"4copia.jpg"},
+    {"id":3,"category":"Categoria3","color":"Blanco","precio":18,"imagen":"9copia.jpg"},
+    {"id":4,"category":"Categoria1","color":"Blanco","precio":10,"imagen":"11copia.jpg"},
+    {"id":5,"category":"Categoria2","color":"Blanco","precio":11,"imagen":"10copia.jpg"},
+    {"id":6,"category":"Categoria3","color":"Blanco","precio":12,"imagen":"8copia.jpg"}
 ]

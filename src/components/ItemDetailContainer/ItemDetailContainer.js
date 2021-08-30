@@ -1,5 +1,4 @@
 import React from 'react'
-
 import ItemDetails from '../ItemDetailContainer/ItemDetails'
 import { useParams } from 'react-router-dom'
 import { useState, useEffect } from 'react'
@@ -9,29 +8,38 @@ import { useState, useEffect } from 'react'
 
 const ItemDetailContainer = () => {
 
-  const [items, setItems] = useState([]);
+  const [detalle, setDetalle] = useState([]);
   const {itemId}=useParams();
   useEffect(() => {
 
-    fetch('productos.json')
+    fetch('https://fakestoreapi.com/products?limit=5')
   .then(response => response.json())
   .then(json => {
-    itemId ?
-    setItems(json.filter((e)=>e.id === itemId)):
-    setItems(json);
+    
+    setDetalle(json.filter((e)=>e.id === parseInt(itemId)));
+   
     
   })}, [itemId]);
+  console.log(detalle);
 
   return(
   
   <div className="item-details-container">
+   
+   
+   {detalle.map((e) => {
 
-       <h1>{itemId}</h1>
+return <div key={e.id} className="items-container">
+           <ItemDetails  data={e}/>
+          
+        </div>
 
-       <ItemDetails items={items}/>
+})}
+
      </div>
-  
-  )
+
+)
+ 
 }
 
 export default ItemDetailContainer
