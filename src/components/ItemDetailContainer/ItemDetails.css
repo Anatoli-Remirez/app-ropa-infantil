@@ -1,0 +1,11 @@
+.details-container {
+
+    display: flex;
+}
+
+.item-counter {
+
+    position: absolute;
+    margin-top: 60px;
+    margin-left: 300px;
+}
